@@ -40,3 +40,6 @@ async function reserveTable() {
     // handle error (if needed)
   }
 }
+function showForm() {
+  document.getElementById('bookingForm').classList.toggle('hidden');
+}
