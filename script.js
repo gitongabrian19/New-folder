@@ -132,4 +132,8 @@ async function reserveTable() {
     console.log(response);
   } catch (error) {
     // handle error (if needed)
-  };
+  }
+}
+ function showFormBookNow(){
+  document.getElementById("bookingForm").classList.toggle("hidden")
+ }
