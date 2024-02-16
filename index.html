@@ -79,6 +79,35 @@
                   </div>
                 </div>
               </section>
+              *****<section class="section__container booking__container">
+                <form id="bookingForm" class="booking__form">
+                    <div class="input__group">
+                        <span><i class="ri-calendar-2-fill"></i></span>
+                        <div>
+                            <label for="check-in">CHECK-IN</label>
+                            <input type="date" id="check-in" name="checkIn" required>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <span><i class="ri-calendar-2-fill"></i></span>
+                        <div>
+                            <label for="check-out">CHECK-OUT</label>
+                            <input type="date" id="check-out" name="checkOut" required>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <span><i class="ri-user-fill"></i></span>
+                        <div>
+                            <label for="guest">GUEST</label>
+                            <input type="number" id="guest" name="guests" required>
+                        </div>
+                    </div>
+                    <div class="input__group input__btn">
+                        <button type="submit" class="btn">BOOK NOW</button>
+                    </div>
+                </form>
+            *****</section>
+        
               <section class="section__container room__container">
                 <p class="section__subheader">OUR LIVING ROOM</p>
                 <h2 class="section__header">The Most Memorable Rest Time Starts Here.</h2>
@@ -248,8 +277,9 @@
           
               <script src="https://unpkg.com/scrollreveal"></script>
         <!-- Link the external JavaScript file -->
+        <script src="server.js"></script>
         <script src="script.js"></script>
-        <script>
+        <!-- <script>
             function bookNow() {
                 const name = prompt('Enter your name:');
                 const email = prompt('Enter your email:');
@@ -304,6 +334,6 @@
                     console.error('Error:', error);
                 });
             }
-        </script>
+        </script> -->
     </body>
 </html>

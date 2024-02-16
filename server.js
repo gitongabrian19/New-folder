@@ -63,10 +63,10 @@ const port = process.env.PORT || 3000; // Use environment variable for the port 
 // Create MySQL connection pool
 const pool = mysql.createPool({
   connectionLimit: 10, // Adjust according to your needs
-  host: 'localhost',
-  user: process.env.MYSQL_USER || 'your_mysql_user', // Use environment variable or default value
-  password: process.env.MYSQL_PASSWORD || 'your_mysql_password', // Use environment variable or default value
-  database: process.env.MYSQL_DATABASE || 'your_database_name', // Use environment variable or default value
+  host: '127.0.0.1',
+  user: process.env.MYSQL_USER || 'root', // Use environment variable or default value
+  password: process.env.MYSQL_PASSWORD || '', // Use environment variable or default value
+  database: process.env.MYSQL_DATABASE || 'Hotel-m-s', // Use environment variable or default value
 });
 
 // Connect to MySQL (optional)
