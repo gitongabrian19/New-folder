@@ -18,4 +18,4 @@ const  connectDb = ()=>{
     
 }
 
-module.exports = connectDb,connection
+module.exports = connectDb ,connection

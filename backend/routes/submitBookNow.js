@@ -13,7 +13,7 @@ submit.post('/submitBookNow', (req, res) => {
     const { name,phone,checkIn,checkOut,guests } = req.body;
     console.log(req.body);
 
-    const sql = `INSERT INTO rooms (name, phone, checkIn,checkOut, guests) VALUES (?, ?, ?,?,?)`;
+    const sql = `INSERT INTO booknow (name, phone, checkIn,checkOut, guests) VALUES (?, ?, ?,?,?)`;
     connection.query(sql, [name, phone,checkIn,checkOut,guests], (err, result) => {
         if (err) {
             console.error('Error inserting data:', err);
