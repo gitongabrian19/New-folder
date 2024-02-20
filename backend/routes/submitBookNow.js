@@ -10,19 +10,19 @@ let connection = mysql.createConnection({
 });
 
 submit.post('/submitBookNow', (req, res) => {
-    const { name,phone,checkIn,checkOut,guests } = req.body;
-    console.log(req.body);
+    try{
+        const { name2,phone2,checkIn2,checkOut2,guest2} = req.body;
+        console.log(req.body);
 
     const sql = `INSERT INTO booknow (name, phone, checkIn,checkOut, guests) VALUES (?, ?, ?,?,?)`;
-    connection.query(sql, [name, phone,checkIn,checkOut,guests], (err, result) => {
-        if (err) {
-            console.error('Error inserting data:', err);
-            res.status(500).send('Error inserting data');
-            return;
-        }
-        console.log('Data inserted successfully');
-        res.sendStatus(200);
-    });
+    connection.query(sql, [name2,phone2,checkIn2,checkOut2,guest2]);
+
+      res.status.json({success:true,message:1});
+    }catch(error){
+        console.error('Error inserting data:', err);
+        //res.status(500).send('Error inserting data');
+    }
+    
 });
 
 module.exports = submit

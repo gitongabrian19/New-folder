@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const corsOptions = {
-  origin : 'http://127.0.0.1:5501',
+  origin : 'http://127.0.0.1:5500',
   methods : 'POST',
   optionSuccessStatus : 204,
 };

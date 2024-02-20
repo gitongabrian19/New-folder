@@ -25,12 +25,13 @@
                       </ul>
                       <button class="btn nav__btn" onclick="showFormBookNow()">Book Now</button>
                       <button class="btn nav__btn" onclick="showFormReserveATable()">Reserve a table</button>
+
+                         <!--booking form-->
                       <div id ="bookingForm" class ="hidden">
-                        <form>
-<!-- Added code starts here -->
+                        <form class="form">
                           <div class="input__group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required> 
+                            <input type="text" class="name" name="name" required> 
                           </div>
                       
                           <div class="input__group">
@@ -43,33 +44,33 @@
                               <!-- other options -->
                             </select>
                           
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" class="phone" name="phone" required>
                           </div>
 <!-- Added code ends here -->
                           <div class="input__group">
                               <span><i class="ri-calendar-2-fill"></i></span>
                               <div>
                                   <label for="check-in">CHECK-IN</label>
-                                  <input type="date" id="check-in" name="checkIn" required>
+                                  <input type="date" class="check-in" name="checkIn" required>
                               </div>
                           </div>
                           <div class="input__group">
                               <span><i class="ri-calendar-2-fill"></i></span>
                               <div>
                                   <label for="check-out">CHECK-OUT</label>
-                                  <input type="date" id="check-out" name="checkOut" required>
+                                  <input type="date" class="check-out" name="checkOut" required>
                               </div>
                           </div>
                           <div class="input__group">
                               <span><i class="ri-user-fill"></i></span>
                               <div>
                                   <label for="guest">GUEST</label>
-                                  <input type="number" id="guest" name="guests" required>
+                                  <input type="number" class="guest" name="guests" required>
                               </div>
                              
                           </div>                          
                           <div class="input__group input__btn">
-                              <button type="submit" class="btn" onclick="submitForm()">BOOK NOW</button>
+                              <button type="submit" class="btn1" >BOOK NOW</button>
                           </div>
                       </form>
 
